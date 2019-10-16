@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title></title>
+    </h:head>
+    <h:body>
+        <h:form id="f1">
+            <h:panelGrid columns="2">
+
+                <h:outputLabel value="Cedula"></h:outputLabel>
+                <h:inputText id="cedula" value="#{pruebaManagedBeans.fiscalizador.concedula2}"></h:inputText>
+                <h:outputLabel value="Celular"></h:outputLabel>
+                <h:inputText id="celular" value="#{pruebaManagedBeans.fiscalizador.fiscelular}"></h:inputText>
+                <h:outputLabel value="Codigo"></h:outputLabel>
+                <h:inputText id="codigo" value="#{pruebaManagedBeans.fiscalizador.fiscodigo}"></h:inputText>
+                <h:outputLabel value="Correo"></h:outputLabel>
+                <h:inputText id="correo" value="#{pruebaManagedBeans.fiscalizador.fiscorreo}"></h:inputText>
+                <h:outputLabel value="Fecha N"></h:outputLabel>
+                <h:inputText id="fecha" value="#{pruebaManagedBeans.fiscalizador.fisfechanacimiento}"></h:inputText>
+                <h:outputLabel value="Genero"></h:outputLabel>
+                <h:inputText id="genero" value="#{pruebaManagedBeans.fiscalizador.fisgenero}"></h:inputText>
+                <h:outputLabel value="Nombre"></h:outputLabel>
+                <h:inputText id="nombre" value="#{pruebaManagedBeans.fiscalizador.fisnombre}"></h:inputText>
+                <h:outputLabel value="telefono"></h:outputLabel>
+                <h:inputText id="telefono" value="#{pruebaManagedBeans.fiscalizador.fistelefono}"></h:inputText>
+                <h:commandButton value="Buscar" action="#{pruebaManagedBeans.buscar()}"></h:commandButton>
+                <h:commandButton value="Insertar" action="#{pruebaManagedBeans.crear()}"></h:commandButton>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+
